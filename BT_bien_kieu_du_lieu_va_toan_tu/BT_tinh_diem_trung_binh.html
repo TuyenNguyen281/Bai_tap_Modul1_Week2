@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baitap</title>
+</head>
+<body>
+<div>
+    <div>
+<p>Tính điểm trung bình 3 môn</p>
+        <div>
+<p> Vật lý</p><br>
+<input id="Vật lý" value=" " type="text"><br>
+<p>Hóa HỌc</p><br>
+<input id="Hóa học" value=" " type="text"><br>
+<p>Sinh học</p><br>
+<input id="Sinh học" value=" " type="text"><br>
+<p>Điểm trung binh</p>
+<input id="Điểm trung bình" value=" " type="text"><br>
+
+<button type="button" onclick="tinh_toan()">Tính điểm trung bình</button>
+        </div>
+    </div>
+<script>
+ function tinh_toan() {
+let Vatly= Number(document.getElementById("Vật lý").value);
+ let Hoahoc= Number(document.getElementById("Hóa học").value) ;
+ let Sinhhoc= Number(document.getElementById("Sinh học").value);
+ let TB= (Vatly + Hoahoc + Sinhhoc) / 3;
+ document.getElementById("Điểm trung bình").value = TB;
+ }
+</script>
+</div>
+</body>
+</html>

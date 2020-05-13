@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích và chu vi hình tròn</title>
+</head>
+<body>
+<div>
+    <div>
+        <div>
+            <p>Tính diện tích hình tròn</p>
+        </div>
+        <div>
+            <p>Nhập bán kính</p>
+            <input id="Bankinh" value="" type="text">
+        </div>
+        <div>
+            <p>Diện tích hình tròn</p>
+            <input id="Dientich" value="" type="text">
+        </div>
+        <div>
+            <p>Chu vi hình tròn</p>
+            <input id="Chuvi" value="" type="text">
+        </div>
+        <div>
+            <button type="button" onclick="tinh_toan1()">Tính1</button>
+        </div>
+    </div>
+    <div>
+        <script>
+            function tinh_toan1() {
+                let R = Number(document.getElementById("Bankinh").value);
+                let S = R * R * 3.14;
+                let P = R * 2 * 3.14;
+                document.getElementById("Dientich").value= S;
+                document.getElementById("Chuvi").value= P;
+            }
+        </script>
+    </div>
+    <div>
+
+    </div>
+</div>
+</body>
+</html>
